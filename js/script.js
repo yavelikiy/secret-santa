@@ -67,6 +67,10 @@ class SecretSantaMain {
 
   onCalculate() {
     this.result.innerHTML = "";
+    if(this.items.length < 2) {
+        this.errorText.innerText = "Cannot make a shuffle with less than 2 people.";
+        return;
+    }
     const resultItems = randomizeItems(this.items);
     resultItems.forEach(({from, to}) => {
         const item = document.createElement("div");
