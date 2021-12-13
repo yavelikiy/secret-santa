@@ -75,7 +75,7 @@ class SecretSantaMain {
         this.result.appendChild(item);
     });
     this.result.scrollIntoView();
-    window.print();
+    //window.print();
   }
 
   onKeyPress(event) {
